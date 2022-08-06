@@ -1,0 +1,130 @@
+*, *::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+  --primary-color: #0087d5;
+  --secondary-color: #033f61;
+}
+
+.index-content{
+  height: 100vh;
+  background-image:url(img/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1.9px);
+  
+}
+
+.nav-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.nav-logo img{
+  width: 150px;
+  height: 50px;
+  width: 150px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+  filter: drop-shadow(5px 5px 5px rgb(1, 35, 54));
+  
+}
+
+.nav-link button{
+  outline: none;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color:white;
+  font-size: 1rem;
+  
+}
+
+.get-started{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-started button{
+  background-image: linear-gradient(to right, var(--primary-color) 0%, #4776E6  51%, #4776E6  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 10px rgb(92, 91, 91);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.75rem;
+}
+
+.get-started button:hover{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.nav-bar-header{
+  height: 15vh;
+  background-color: #03102d;
+}
+
+.search{
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  padding:0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color:#fff;
+  font-family: inherit;
+}
+
+.search:focus{
+  outline:0;
+  /* background-color: var(--primary-color); */
+}
+
+/* .search::placeholder{
+  color: #7378c5;
+} */
+
+
+.movies-list{
+  
+  background-color: #03102d;
+  gap: 1.5rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 50px;
+  
+  justify-content: space-between;
+
+}
+
+.movie-details{
+  padding: 20px;
+}
+
+.movie-info{
+  background: linear-gradient(90deg, rgb(224, 180, 6) 0%, rgb(237, 121, 5) 100%);
+  overflow: hidden;
+  padding-bottom: 10px;
+  
+}
+
+.movie-img{
+  height: 370px;
+  width: 300px;
+}
