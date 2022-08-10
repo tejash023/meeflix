@@ -12,10 +12,10 @@
 
 .index-content{
   height: 100vh;
-  background-image:url(img/bg-img.jpg);
+  background-image:url(img/bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(1.9px);
+  
   
 }
 
@@ -24,6 +24,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 50px;
+  
 }
 
 .nav-logo img{
@@ -32,6 +33,7 @@
   width: 150px;
   -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
   filter: drop-shadow(5px 5px 5px rgb(1, 35, 54));
+  
   
 }
 
@@ -49,21 +51,39 @@
 .get-started{
   height: 80vh;
   display: flex;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
 
+.get-started-section{
+  display: flex;
+}
+
+.heading{
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.getstarted-email{
+  padding: 20px 73px;
+  
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
 .get-started button{
-  background-image: linear-gradient(to right, var(--primary-color) 0%, #4776E6  51%, #4776E6  100%);
-  margin: 10px;
-  padding: 15px 45px;
+  background-image: linear-gradient(to right, #9c46ff 0%, #006aff 51%, #0046ec 100%);
+  
+  padding: 11px 28px;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;            
-  box-shadow: 0 0 10px rgb(92, 91, 91);
-  border-radius: 5px;
   border: none;
   font-size: 1.75rem;
 }
@@ -179,6 +199,25 @@
    gap: 1rem;
    padding: 10px 0;
  }
+
+ .heading{
+  font-size: 2rem;
+  
+  margin-bottom: 1rem;
+  
+}
+.getstarted-email{
+  padding: 10px 20px;
+  
+ 
+}
+
+.get-started button{
+  
+  font-size: 1rem;
+  padding: 5px 15px;
+  
+}
 }
 
 
