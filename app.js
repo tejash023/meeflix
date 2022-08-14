@@ -22,15 +22,25 @@ getStartedButton.addEventListener('click', showMovies);
 document.querySelector('.movies-content').style.display = 'none';
 
 function showMovies(){
+  const email = userEmail.value;
   
-  //hide landing page
-  document.querySelector('.index-content').style.display = 'none';
 
-  //show movies page
-  document.querySelector('.movies-content').style.display = 'block';
+  if(email === config.email1 || email === config.email2){
+    //hide landing page
+    document.querySelector('.index-content').style.display = 'none';
 
-  //call movies api
-  getMovies(API_URL);
+    //show movies page
+    document.querySelector('.movies-content').style.display = 'block';
+
+    //call movies api
+    getMovies(API_URL);
+
+    document.querySelector('.nav-log-img').addEventListener('click', returnHome);
+  }else{
+    window.alert("Please enter valid test email! Test email provided in Github..")
+    userEmail.value = '';
+  }
+  
 }
 
 function getMovies(url){
@@ -86,3 +96,13 @@ document.addEventListener('submit', (e) => {
 
   e.preventDefault();
 })
+
+
+//return home
+function returnHome(){
+  //show landing page
+  document.querySelector('.index-content').style.display = 'block';
+
+  //hide movies page
+  document.querySelector('.movies-content').style.display = 'none';
+}
