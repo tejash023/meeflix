@@ -37,7 +37,7 @@ function showMovies(){
 
     document.querySelector('.nav-log-img').addEventListener('click', returnHome);
   }else{
-    window.alert("Please enter valid test email! Test email provided in Github..")
+    window.alert("Please enter valid test email! Test email: test123@meeflix.com")
     userEmail.value = '';
   }
   
