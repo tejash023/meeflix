@@ -1,2 +1,4 @@
 # meeflix
-movie info app fetched from TMDB
+Movie info app fetched from TMDB
+
+Test Email: test123@meeflix.com
